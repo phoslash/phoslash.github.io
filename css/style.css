@@ -1,0 +1,171 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+    background: #272119;
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.top h1:before {
+    content: '';
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.top {
+    -webkit-animation: sastw 5s ease infinite;
+    animation: sastw 5s ease infinite;
+}
+
+.nav {
+    -webkit-animation: fade .3s ease-out;
+    animation: fade .3s ease-out;
+    overflow: hidden;
+    z-index: 1000;
+    position: fixed;
+    top: 30px;
+    margin-left: 30px;
+    padding: 15px 10px;
+    padding-top: 7px;
+    transition: all 0.3s ease;
+}
+
+.nav .one,
+.nav .two,
+.nav .thr {
+    width: 30px;
+    height: 1px;
+    margin-top: 8px;
+    background: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.nav:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+input:checked ~ .navl {
+    left: 0;
+    box-shadow: 3px 1px 20px rgba(0, 0, 0, .1);
+    opacity: 1;
+}
+
+.navl {
+    max-width: calc(100% - 100px);
+    padding-top: 27px;
+    opacity: 0;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: -220px;
+    height: 100vh;
+    overflow: auto;
+    width: 220px;
+    padding-bottom: 40px;
+    transition: all 0.3s ease, height 0.1s ease;
+    background: #fff;
+}
+
+input:checked ~ .nav {
+    margin-left: 250px;
+}
+
+input:checked ~ .nav .two {
+    transform: translateX(-50px);
+    opacity: 0.4;
+}
+
+input:checked ~ .nav .one {
+    transform: rotate(-45deg) translateY(13px) translateX(1px);
+    margin-left: -10px;
+}
+
+input:checked ~ .nav .thr {
+    transform: rotate(45deg) translateY(-16px) translateX(2px);
+    margin-left: -13px;
+}
+
+.mayushii {
+    position: absolute;
+    bottom: 0;
+    height: 370px;
+    max-height: 100vh;
+    right: 30px;
+    opacity: 0.4;
+    -webkit-animation: fade .3s ease-out;
+    animation: fade .3s ease-out;
+    pointer-events: none
+}
+
+.navl li {
+    opacity: 0.7;
+    padding: 15px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 4px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.top {
+    font-weight: 400 !important;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.navl li:not(.top):hover {
+    background: rgba(0, 0, 0, .1);
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.navl li:not(.top):active {
+    background: rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1) inset
+}
+
+@media (max-width: 320px) {
+    input:checked ~ .nav {
+        right: 25px !important;
+        margin: 0 !important;
+        left: initial !important;
+        -webkit-animation: lolkeka .3s ease;
+        animation: lolkeka .3s ease;
+    }
+    input:checked ~ .nav * {
+    	-webkit-animation: lolkeka .5s ease;
+    	animation: lolkeka .5s ease;
+    	transition-delay: .45s;
+    }
+}
+
+@-webkit-keyframes lolkeka {
+	0%, 100% {
+		opacity: 0;
+	}
+}
+
+@keyframes lolkeka {
+	0%, 100% {
+		opacity: 0
+	}
+}
+
+.navl a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}

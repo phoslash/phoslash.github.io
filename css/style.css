@@ -30,21 +30,8 @@ body {
     overflow: visible;
 }
 
-.jp {
-    font-family: 'Noto Sans Japanese', sans-serif;
-    font-weight: 100;
-}
 
-
-.love {
-    font-family: 'Noto Sans Japanese', sans-serif;
-    font-size: 80px;
-    font-weight: 100;
-    margin-bottom: 20px;
      
-}
-
-
 
 .top h1:before {
     content: '';

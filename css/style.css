@@ -12,6 +12,40 @@ body {
     box-sizing: border-box;
 }
 
+.blurry-text {
+   color: transparent;
+   text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.photo {
+    position: relative;
+    color: #fff;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    -webkit-transition: all 0.7s cubic-bezier(.55, 0, .1, 1);
+    transition: all 0.7s cubic-bezier(.55, 0, .1, 1);
+    overflow: visible;
+}
+
+.jp {
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-weight: 100;
+}
+
+
+.love {
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    margin-bottom: 20px;
+     
+}
+
+
+
 .top h1:before {
     content: '';
     text-align: right;

@@ -50,3 +50,133 @@
     opacity: 0.9
         
 }
+
+
+
+.deidara {
+    height: 100px;
+    position: fixed;
+    top: 540px;
+    left: 400px;
+    opacity: 0.8;
+}
+
+
+.lera {
+transition:all 10s easy;
+animation:rotation 15s ease infinite;
+  -webkit-transform: translate3d(0, 0, 0); 
+-webkit-animation:rotation 15s ease infinite;
+color:#ff0}
+@-webkit-keyframes rotation{
+0%,1%,2%,3%,100%{
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	}
+	
+30%{
+transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+opacity: 0.5
+}
+50%{
+transform:rotate(-90deg);
+-webkit-transform:rotate(-90deg);
+}
+}
+@keyframes rotation{
+0%,1%,100%{
+transform:rotate(180deg);
+-webkit-transform:rotate(180deg);
+}
+30%{
+transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+opacity: 0.5;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+50%{
+transform:rotate(-90deg);-
+webkit-transform:rotate(-90deg);
+}
+}
+
+.lera1 {
+    height: 300px;
+    
+}
+
+
+
+.tma {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}
+
+    
+   .sea {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 220px;
+    height: 120px;
+    margin:-20px 0 0 -40px;
+    -webkit-animation:spin1 1s linear infinite;
+    -moz-animation:spin1 3s linear infinite;
+    animation:spin1 2s linear infinite;
+}
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(360deg); transform:rotate(344460deg); }
+}
+
+
+
+.kyk { 
+    position: absolute;
+    right: 999px;
+    width: 220px;
+    height: 120px;
+    margin:-20px 0 0 -40px;
+    -webkit-animation:spin2 1s linear infinite;
+    -moz-animation:spin2 3s linear infinite;
+    animation:spin2 2s linear infinite;
+}
+@-moz-keyframes spin2 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin2 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin2 { 100% { -webkit-transform: rotate(360deg); transform:rotate(460deg); }
+}
+
+.sas {
+    position: absolute;
+    right: 20%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin5 4s linear infinite;
+    -moz-animation:spin5 4s linear infinite;
+    animation:spin5 4s linear infinite;
+}
+@-moz-keyframes spin5 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin5 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin5 { 100% { -webkit-transform: rotate(360deg); transform:rotate(6660deg); }
+}
+
+
+.vkysna {
+    position: absolute;
+    right: 285px;
+    top: 280px;
+}
+    

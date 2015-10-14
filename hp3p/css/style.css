@@ -1,0 +1,10 @@
+ .chlen {
+    position: absolute;
+    bottom: 0;
+    height: 370px;
+    max-height: 100vh;
+    right: 30px;
+    opacity: 0.4;
+    
+    animation: fade .3s ease-out;
+    pointer-events: none

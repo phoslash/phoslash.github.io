@@ -100,10 +100,52 @@
     </div>
 
 
-<img  src="hp3p/32.gif" class="chlen"></img>
+<div class="chlen">
+<style>
+	.chlen {
+     position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+  
+  transform-style: preserve-3d;
+  animation: rotate 1s infinite linear;
+  }
+.chlen:before,
+.chlen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 64px;
+  }
+  .cube:before {
+    transform: rotateX(20deg);  
+    }
+  .cube:after {
+    transform: rotatey(40deg);  
+    }
+
+.side {
+  position: absolute;
+  width: 50px;
+  height: 64px;
+  }
+
+.back {
+  transform: translateZ(-50px);
+  background-image: url(32.gif);
+  }
+.front {
+  transform: translateZ(50px);
+  background-image: url(32.gif);
+  }
+  </style>
 
 
 <div class="cube">
+	
     <div class="back side"></div>
     <div class="left side"></div>
     <div class="right side"></div>
